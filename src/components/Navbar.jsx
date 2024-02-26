@@ -15,30 +15,33 @@ export default function Navbar() {
     };
 
     return (
-        <Flex
-            w={'100%'}
-            h={'45px'}
-            background={'rgba(255, 255, 255, 0.19)'}
-            borderRadius='16px'
-            backdropFilter='blur(5px)'
-            justify={'space-evenly'}
-            align={'center'}
-            maxW={'800px'}
-            color={'gray.300'}
-            my={'15px'}
-        >
-            <Link href='#Experiencia' onClick={(e) => handleClick(e, '#Experiencia')}>
-                <Text cursor={'pointer'}>Experiencia</Text>
-            </Link>
-            <Link href='#Proyectos' onClick={(e) => handleClick(e, '#Proyectos')}>
-                <Text cursor={'pointer'}>Proyectos</Text>
-            </Link>
-            <Link href='#Sobre-mi' onClick={(e) => handleClick(e, '#Sobre-mi')}>
-                <Text cursor={'pointer'}>Sobre mi</Text>
-            </Link>
-            <Link href='https://www.linkedin.com/in/romanolautaroexequiel' target="_blank">
-                <Text cursor={'pointer'}>Contacto</Text>
-            </Link>
-        </Flex>
+        <>
+            <Flex
+                w={'100%'}
+                h={'45px'}
+                background={'rgba(255, 255, 255, 0.19)'}
+                borderRadius='16px'
+                backdropFilter='blur(5px)'
+                justify={'space-evenly'}
+                align={'center'}
+                maxW={'800px'}
+                color={'gray.300'}
+                my={'15px'}
+                display={['none', 'none', 'flex', 'flex']}
+            >
+                <Link href='#Experiencia' onClick={(e) => handleClick(e, '#Experiencia')}>
+                    <Text cursor={'pointer'}>Experiencia</Text>
+                </Link>
+                <Link href='#Proyectos' onClick={(e) => handleClick(e, '#Proyectos')}>
+                    <Text cursor={'pointer'}>Proyectos</Text>
+                </Link>
+                <Link href='#Sobre-mi' onClick={(e) => handleClick(e, '#Sobre-mi')}>
+                    <Text cursor={'pointer'}>Sobre mi</Text>
+                </Link>
+                <Link href='https://www.linkedin.com/in/romanolautaroexequiel' target="_blank">
+                    <Text cursor={'pointer'}>Contacto</Text>
+                </Link>
+            </Flex>
+        </>
     )
 }
