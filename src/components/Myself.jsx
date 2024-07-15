@@ -38,7 +38,7 @@ export default function Myself() {
                             <IoMailOutline /> <Text display={['none', 'none', 'flex', 'flex']}>Lautarooyt837@gmail.com</Text>
                         </MyButton>
                     </Link>
-                    <Link href='/ROMANO LAUTARO CURRICULUM.pdf' target="_blank">
+                    <Link href='/Romano Lautaro CV.pdf' target="_blank">
                         <MyButton>
                             <FaRegAddressCard /> <Text display={['none', 'none', 'flex', 'flex']}>Mi CV</Text>
                         </MyButton>
